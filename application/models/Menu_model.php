@@ -74,7 +74,7 @@ class Menu_model extends CI_Model
             $this->db->where($where);
         }
         $this->db->limit('6');
-        $this->db->order_by('id');
+        $this->db->order_by('id', 'DESC');
         $query = $this->db->get();
         return $query;
     }
